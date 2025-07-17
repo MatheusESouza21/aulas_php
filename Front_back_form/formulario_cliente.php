@@ -25,7 +25,7 @@
     <center>
         <img src="logo.png" alt="Logo" height="100" width="100" />
         <h1>Cadastro de Cliente</h1>
-        <form method="post" action="/cgi-bin/post-query">
+        <form method="post" action="back_cliente.php">
             <table align="center">
                 <tr>
                     <td>Nome do cliente:</td>
