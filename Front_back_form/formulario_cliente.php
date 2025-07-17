@@ -25,7 +25,7 @@
     <center>
         <img src="logo.png" alt="Logo" height="100" width="100" />
         <h1>Cadastro de Cliente</h1>
-        <form method="post" action="back_cliente.php">
+        <form method="get" action="back_cliente.php">
             <table align="center">
                 <tr>
                     <td>Nome do cliente:</td>
@@ -46,7 +46,8 @@
                 <tr>
                     <td><label for="Gênero dos jogos">Gênero dos jogos</label></td>
 
-                    <td><select name="Acao" id="Genero">Ação
+                    <td><select name="genero" id="genero">Ação
+                            <option value="Acão">Ação</option>Ação
                             <option value="Aventura">Aventura</option>Aventura
                             <option value="RPG">RPG</option>RPG
                             <option value="Simulação">Simulação</option>Simulação
