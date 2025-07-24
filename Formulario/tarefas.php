@@ -1,50 +1,28 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciador de Tarefas</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <h1>Gerenciador de Tarefas</h1>
-    <!--Aqui ira o restante do codigo-->
-    <form>
-        <fieldset>
-            <legend>Nova Tarefa</legend>
-            <label>
-                Tarefa:
-                <input type="text" name="nome">
-            </label>
-            <input type="submit" value="Cadastar" />
-        </fieldset>
-    </form>
+<?php
+session_start();
 
-    <?php
-    $lista_tarefas = array();
-    if (isset($_GET["nome"])) {
-        $_SESSION["lista_tarefas"][] = $_GET["nome"];
+    if (isset($_GET["nome"]) && $_GET["nome"] != "") {
+        $tarefa = array();
     }
     $lista_tarefas = array();
 
     if (isset($_SESSION["lista_tarefas"])) {
         $lista_tarefas = $_SESSION["lista_tarefas"];
+    } else{
+        $lista_tarefas = array();
     }
 
+    include"template.php";
+//session_desroy();
     ?>
-
-    <table>
-        <tr>
-            <th>Tarefas</th>
-        </tr>
-        <?php foreach ($lista_tarefas as $tarefa): ?>
-            <tr>
-                <td><?php echo $tarefa; ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
+    
 </body>
-
 </html>
