@@ -1,6 +1,7 @@
 <?php
     session_start();
-
+     include "banco.php"
+    
     if (isset($_GET['nome']) && $_GET['nome'] != '') {
         // Declarando uma array chamada 'tarefa'
         $tarefa = array();
@@ -30,6 +31,7 @@
         $_SESSION['lista_tarefas'][] = $tarefa;
     }
 
+        
     if (array_key_exists('lista_tarefas', $_SESSION)) {
         $lista_tarefas = $_SESSION['lista_tarefas'];
     } else {
