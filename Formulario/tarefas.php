@@ -30,6 +30,7 @@
         $_SESSION['lista_tarefas'][] = $tarefa;
     }
 
+        
     if (array_key_exists('lista_tarefas', $_SESSION)) {
         $lista_tarefas = $_SESSION['lista_tarefas'];
     } else {
