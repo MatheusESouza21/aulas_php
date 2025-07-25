@@ -1,6 +1,7 @@
 <?php
     session_start();
-
+     include "banco.php"
+    
     if (isset($_GET['nome']) && $_GET['nome'] != '') {
         // Declarando uma array chamada 'tarefa'
         $tarefa = array();
