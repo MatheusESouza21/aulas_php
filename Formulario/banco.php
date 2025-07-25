@@ -17,5 +17,5 @@
             while ($tarefa = mysqli_fetch_assoc($resultado)){
                 $tarefas[] = $tarefa;
             }
-        return $tarefas
+        return $tarefas;
         }
