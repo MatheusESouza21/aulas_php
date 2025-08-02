@@ -17,6 +17,7 @@ $clientes = $stmt->fetchAll();
 </head>
 
 <body>
+    <?php include 'index.php'; ?>
     <h2>Lista de Clientes</h2>
     <table border="1">
         <tr>

@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <?php include 'index.php'; ?>
     <h2>Excluir Cliente</h2>
     <form action="processarExclusao.php" method="post">
         <label for="id">ID do Cliente:</label>

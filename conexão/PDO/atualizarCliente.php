@@ -41,6 +41,7 @@ if ($id_cliente && is_numeric($id_cliente)) {
     </script>
 </head>
 <body>
+    <?php include 'index.php'; ?>
     <h2>Atualizar Cliente</h2>
 
     <!--Se houver mensagem de erro, exiba a mensagem e o campo de busca-->

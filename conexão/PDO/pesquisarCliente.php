@@ -1,3 +1,5 @@
+<?php include 'index.php'; ?>
+
 <?php
 require_once 'conexao.php';
 
@@ -6,7 +8,9 @@ $conexao = conectarBanco();
 $busca = $_GET['busca'] ?? "";
 if ($busca == "") {
     ?>
+    <br>
     <form action="pesquisarCliente.php" method="get">
+        <h2>Pesquisar Cliente</h2>
         <label for="busca">Digite o ID ou o nome:</label>
         <input type="text" id="busca" name="busca" required>
         <button type="submit">Pesquisar</button>
