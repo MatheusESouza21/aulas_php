@@ -1,17 +1,15 @@
 <?php
-//Definição das credenciais de conexão
+//DEFINIÇÂO DAS PRETENCIAIS DE CONEXAO
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "armazena_imagem";
 
-// Cria a conexão
+//CRIANDO A CONEXÃO
 $conexao = new mysqli($servername, $username, $password, $dbname);
 
-// VERIFICANDO CONEXÃO
+//VERIFICANDO SE OUVE ERRO NA CONEXAO
 if ($conexao->connect_error) {
-    die("Falha na conexão: " . $conexao->connect_error);
-} else {
-    echo "Conexão bem-sucedida!";
+    die("Falha na Conexão: " . $conexao->connect_error);
 }
 ?>
