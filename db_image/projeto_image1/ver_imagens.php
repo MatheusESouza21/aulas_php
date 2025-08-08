@@ -30,3 +30,4 @@ echo $imagem->Imagem;
     echo "Imagem não encontrada.";
 }
 $stmt ->close();
+?>

@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "armazena_imagem";
+$dbname = "armazena_imagens";
 
 //CRIANDO A CONEXÃO
 $conexao = new mysqli($servername, $username, $password, $dbname);
