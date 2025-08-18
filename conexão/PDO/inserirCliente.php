@@ -22,7 +22,7 @@
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
         <br>
-        <button type="submit">Cadastrar Cliente</button>
+        <button type="submit" id="botao">Cadastrar Cliente</button>
     </form>
 </body>
 </html>
