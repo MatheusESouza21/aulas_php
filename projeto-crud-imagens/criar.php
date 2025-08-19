@@ -29,15 +29,15 @@
         <h2>Cadastrar Funcionário</h2>
         <form method="post" enctype="multipart/form-data">
             <label>Nome:</label><br>
-            <input type="text" name="nome" required><br><br>
+            <input type="text" name="nome" id="nome" required><br><br>
     
             <label>Cargo:</label><br>
-            <input type="text" name="cargo" required><br><br>
+            <input type="text" name="cargo" id="cargo" required><br><br>
     
             <label>Foto:</label><br>
-            <input type="file" name="foto" accept="image/*" required><br><br>
+            <input type="file" name="foto" id="image" accept="image/*" required><br><br>
     
-            <input type="submit" value="Cadastrar">
+            <input type="submit" id="botao" value="Cadastrar">
         </form>
     </main>
     
